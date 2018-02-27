@@ -1,0 +1,221 @@
+Critérios fundamentalistas para análise de ações
+--------- ---------------- ---- ------- -- -----
+
+XX) P/L
+
+       PL <  1 : problemas; saída (vermelho)
+  1 <= PL <= 15: ok (verde)
+ 15 <  PL <  20: caro; observação (amarelo)
+ 20 <= PL      : muito caro; saída (vermelho)
+
+Alternativamente:
+
+       PL <  1 : problemas; saída (vermelho)
+  1 <= PL <= 10: ok (verde)
+ 10 <  PL <  20: caro; observação (amarelo)
+ 20 <= PL      : muito caro; saída (vermelho)
+
+ Observação: segundo Graham, o PL é a cotação atual dividido pela
+ média do lucro (líquido) dos últimos três anos. O valor do PL do
+ Guiainvest considera apenas o lucro líquido atual. Tentar fazer
+ a correção em uma versão  posterior da planilha.
+
+ Observação 2: a exigência acima pode ser também um pouco relaxada pela
+ adoção do seguinte critério (Graham p.388);
+
+ 1 / P/L >= juros da renda fixa
+
+XX) Variação P/L
+
+  PL crescente: não ok (vermelho)
+  PL decrescente ou estável: ok (verde)
+
+  Considerar período de 3 anos
+
+XX) P/L relativo
+
+  PL <= PLSeg: ok (verde)
+  PL >  PLSeg: não ok (vermelho)
+
+  PLSeg: média dos PLs das empresas do mesmo segmento
+
+XX) P/VP
+
+  0 < PVP <= 1.5: ok (verde)
+  PVP > 1.5 e Relação PL / PVP (abaixo) atendida: ok (amarelo)
+  Condições: ROE bom E existência de capital de giro
+
+  Caso contrário: nok (vermelho)
+
+XX) Relação P/L / P/VP
+
+  0 < PL * PVP <= 22.5: ok (verde)
+  Caso contrário: nok (vermelho)
+
+XX) Dividend Yield
+
+  DY > rendimento renda fixa (ok)
+  0 < DY <= rendimento renda fixa
+    E ROE/ROIC > rendimento renda fixa: ok (amarelo)
+  Caso contrário: nok (vermelho)
+
+  Condição: para DY ok, se Payout > 100%, ligar sinal amarelo
+  Verificar (manualmente) a ocorrência de eventos não recorrentes
+
+XX) Evolução Dividend Yield
+
+  DY constante últimos 10 anos: ok (verde)
+  DY constante últimos 5 anos: ok (amarelo)
+  Caso contrário: nok (vermelho)
+
+XX) Tamanho da empresa
+
+  Receita líquida > 500M: ok (verde)
+  Caso contrário: nok (vermelho)
+
+  Alternativa: utilizar Ativo total > sugestão: 240M
+  (lei 11.638 de 2007, artigo 3: Considera-se de grande porte, para os fins
+  exclusivos desta Lei, a sociedade ou conjunto de sociedades sob controle
+  comum que tiver, no exercício social anterior, ativo total superior a
+  R$ 240.000.000,00 (duzentos e quarenta milhões de reais) ou receita
+  bruta anual superior a R$ 300.000.000,00 (trezentos milhões de reais).
+
+XX) Liquidez corrente
+
+  LC > 1: ok (verde)
+  Caso contrário: nok (vermelho)
+
+XX) Evolução LC
+
+  LC crescente: não ok (vermelho)
+  Caso contrário: ok (verde)
+
+  Considerar período de 3 anos
+
+XX) Liquidez corrente relativa
+
+  LC <= LCSeg: ok (verde)
+  LC >  LCSeg: não ok (vermelho)
+
+  LCSeg: média dos LCs das empresas do mesmo segmento
+
+XX) Dívida bruta / Patrimônio líquido
+
+  D/PL < 1: ok (verde)
+  Caso contrário: nok (vermelho)
+
+  Alternativa: dívida de longo prazo (bruta?) não deve exceder
+  capital de giro.
+
+XX) Evolução Dívida Bruta / Patrimônio líquido
+
+  D/PL crescente: nok (vermelho)
+  Caso contrário: ok (verde)
+
+  Considerar período de 3 anos
+
+XX) Dívida bruta / patrimônio líquido relativa
+
+  D/PL <= D/PLSeg: ok (verde)
+  D/PL >  D/PLSeg: não ok (vermelho)
+
+  D/PLSeg: média dos D/PLs das empresas do mesmo segmento
+
+XX) Evolução Lucro líquido
+
+  Leitão: lucros líquidos estritamente crescentes nos últimos 10(?) anos.
+
+  Graham: lucros constantes (sem prejuízos) nos últimos 5 anos E
+  Crescimento mínimo de 1/3 nos lucros por ação nos últimos 10 anos,
+  utilizando as médias trianuais de início e fim.
+
+  Alternativa: Crescimento dos lucros dos últimos dez anos a uma taxa
+  mínima composta de 4% a 7% ao ano.
+  Observação: uma taxa de crescimento maior que 10% é preocupante porque
+  dificilmente é sustentável.
+
+  Acrescentar a seguinte regra: se lucros decrescentes nos últimos 3 anos:
+  nok (vermelho)
+
+XX) Evolução Receita
+
+  Graham: crescimento das receitas nos últimos 10 anos com uma taxa
+  entre 3% e 10% ao ano.
+
+XX) Acionistas
+
+  Ações pertencentes a instituições: < 60% ok (verde)
+  Caso contrário nok (vermelho)
+
+XX) Relação ROE / P/L (para empresas de crescimento)
+
+  ROE > P/L: ok (verde)
+  Caso contrário: nok (vermelho)
+
+XX) Índice PEG (para ações de crescimento)
+
+  PEG = P/L / ROE (utilizando lucro dos 4 últimos trimestres)
+
+  Quanto menor, melhor.
+  Estabelecer ranking para selecionar empresas
+
+XX) ROE
+
+  ROE > juros renda fixa: ok (verde)
+  ROE < juros renda fixa E DY >= juros renda fixa: ok (amarelo)
+  Caso contrário: nok (vermelho)
+
+XX) Evolução ROE
+
+  Crescente: ok (verde)
+  Estável E lucro e patrimônio crescente: ok (amarelo)
+  Caso contrário: nok (vermelho)
+
+XX) Cotação
+
+   Cotação atual > limite mínimo
+
+   Limite mínimo = valor que indica perigo de falência ($1 ?).
+
+XX) Margem de segurança
+
+  Poder de lucro: MS = ((PdL / Tx) - 1) * 100
+
+  Valor intrínseco: MS = ((VI / Cot) - 1) * 100
+
+  MS: margem de segurança
+  PdL: poder de lucro (= 1 / P/L)
+  Tx: taxa de juros da renda fixa.
+  Cot: cotação atual
+  VI: valor intrínseco
+      VI = sqrt(P/L máximo * P/VP máximo * LPA atual * VPA atual)
+      ou
+      VI = NCAV (ativo circulante líquido)
+      Observação: a primeira alternativa é preferível para grau
+      defensivo; a segunda para grau empreendedor.
+
+  Para empresas de grau defensivo: MS >= 20% (?)
+  Para empresas de grau empreendedor: MS >= 50% (?)
+
+=========================================
+
+Equivalência entre critérios de crescimento de lucros
+
+Critério 1: crescimento dos lucros a uma taxa i durante is últimos
+A anos.
+
+  Tem-se Lf = Li(1+i)^A
+  Lf = lucro final
+  Li = lucro inicial
+
+Critério 2: crescimento nominal de K nos últimos A anos usando médias
+de b anos no início e no fim.
+
+  Lf = K*Li
+
+  com Li = (sum_{n=1}^{b} ln) / b
+      Lf = (sum_{n=A-(b+1)}{A} ln) / b
+
+   ln = lucro do ano n
+
+Relação: K = (1 + i)^A
