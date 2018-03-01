@@ -15,6 +15,13 @@ Alternativamente:
  10 <  PL <  20: caro; observação (amarelo)
  20 <= PL      : muito caro; saída (vermelho)
 
+Outra alternativa:
+
+       PL <  1 : problemas; saída (vermelho)
+  1 <= PL <= 10: ok (verde)
+ 10 <  PL <= 15: caro; observação (amarelo)
+ 15 < PL      : muito caro; saída (vermelho)
+
  Observação: segundo Graham, o PL é a cotação atual dividido pela
  média do lucro (líquido) dos últimos três anos. O valor do PL do
  Guiainvest considera apenas o lucro líquido atual. Tentar fazer
