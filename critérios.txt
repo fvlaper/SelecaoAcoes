@@ -59,6 +59,13 @@ XX) Relação P/L / P/VP
   0 < PL * PVP <= 22.5: ok (verde)
   Caso contrário: nok (vermelho)
 
+XX) P/VP relativo
+
+  P/VP <= P/VPSeg: ok (verde)
+  P/VP >  P/VPSeg: não ok (vermelho)
+
+  P/VPSeg: média dos P/VPs das empresas do mesmo segmento
+
 XX) Dividend Yield
 
   DY > rendimento renda fixa (ok)
@@ -74,6 +81,22 @@ XX) Evolução Dividend Yield
   DY constante últimos 10 anos: ok (verde)
   DY constante últimos 5 anos: ok (amarelo)
   Caso contrário: nok (vermelho)
+
+XX) Evolução Margem Bruta
+
+  Margem bruta decrescente: não ok (vermelho)
+  Margem bruta crescente ou estável: ok (verde)
+
+  Considerar margem bruta dos últimos 10 anos,
+  utilizando as médias trianuais de início e fim.
+
+XX) Evolução Margem Líquida
+
+  Margem líquida decrescente: não ok (vermelho)
+  Margem líquida crescente ou estável: ok (verde)
+
+  Considerar margem líquidas dos últimos 10 anos,
+  utilizando as médias trianuais de início e fim.
 
 XX) Tamanho da empresa
 
@@ -166,6 +189,12 @@ XX) Índice PEG (para ações de crescimento)
   Quanto menor, melhor.
   Estabelecer ranking para selecionar empresas
 
+  Cálculo alternativo:
+
+  PEG = P/L / Crescimento esperado da empresa (%)
+
+  PEG < 0.5: indicativo de compra; PEG > 1.5: indicativo de venda
+
 XX) ROE
 
   ROE > juros renda fixa: ok (verde)
@@ -203,6 +232,54 @@ XX) Margem de segurança
 
   Para empresas de grau defensivo: MS >= 20% (?)
   Para empresas de grau empreendedor: MS >= 50% (?)
+
+XX) Diversificação
+
+  Diversificar por setor (segmento?)
+  Diversificar por tamanho (blue chips / small caps)
+
+  Grau defensivo: 10 ações
+  Grau empreendedor: 20 ações
+  Grau subvalorizado: 30 ações
+
+  Observações:
+   1) Iniciar com grau defensivo e evoluir gradualmente.
+   2) Evolução: substituir 5 ações de grau defensivo por 10 empreendedoras,
+      etc.
+   3) Limitar quantidade de capital por tipo: 10% para ação defensiva,
+      5% para empreendedora; 3% subvalorizada.
+
+=========================================
+
+Critérios grau empreendedor
+
+XX) P/L <= 10
+
+XX) Condição financeira forte:
+
+  LC <= 1.5
+  Passivo total <= Ativo circulante líquido (empresas industriais)
+
+  Obs: Passivo total = circulante + exigível de longo prazo
+
+XX) Estabilidade nos lucros: sem prejuízo nos últimos 5 anos
+
+XX) Histórico de dividendos: alguns dividendos atuais
+
+XX) Crescimento nos lucros: lucro do último anos > 5 anos atrás
+
+XX) Valor de mercado <= (1 / (1 + (MS/100))) * NCAV
+
+  MS = margem de segurança (%)
+  NCAV = Ativo Circulante - Passivo total
+
+=========================================
+
+Critérios para grau subvalirizado
+
+XX) Valor de mercado <= NCAV
+
+XX) Lucro positivo no último ano
 
 =========================================
 
