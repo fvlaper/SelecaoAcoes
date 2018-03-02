@@ -1,6 +1,21 @@
 Critérios fundamentalistas para análise de ações
 --------- ---------------- ---- ------- -- -----
 
+=======================================================
+
+Critérios atualmente utilizados:
+
+XX) Tamanho da empresa
+
+  Ativo total > [limite mínimo]: ok (verde)
+  Caso contrário: nok (vermelho)
+
+  [limite mínimo]: parâmetro com valor R$240M (lei 11.638/2007 art 3).
+
+=======================================================
+
+Levantamento incial dos critérios
+
 XX) P/L
 
        PL <  1 : problemas; saída (vermelho)
