@@ -12,9 +12,24 @@ XX) Tamanho da empresa
 
   [limite mínimo]: parâmetro com valor R$240M (lei 11.638/2007 art 3).
 
+  Estratégias que utilizam:
+
+  - Graham - grau defensivo
+
+XX) Liquidez corrente
+
+  LC > [limite mínimo]: ok (verde)
+  Caso contrário: nok (vermelho)
+
+  [limite mínimo]: parâmetro com valor 1
+
+  Estratégias que utilizam:
+
+  - Graham - grau defensivo
+
 =======================================================
 
-Levantamento incial dos critérios
+Levantamento inicial dos critérios
 
 XX) P/L
 
