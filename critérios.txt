@@ -27,6 +27,16 @@ XX) Liquidez corrente
 
   - Graham - grau defensivo
 
+XX) Histórico de lucros ininterruptos
+
+  Lucros nos últimos 10 anos: excelente (verde)
+  Lucros nos últimos 5 anos: bom (amarelo)
+  Caso contrário: nok (vermelho)
+
+  Estratégias que utilizam:
+
+  - Graham: grau defensivo
+
 =======================================================
 
 Levantamento inicial dos critérios
