@@ -37,6 +37,16 @@ XX) Histórico de lucros ininterruptos
 
   - Graham: grau defensivo
 
+XX) Histórico de dividendos ininterruptos
+
+  Dividendos nos últimos 10 anos: excelente (verde)
+  Dividendos nos últimos 5 anos: bom (amarelo)
+  Caso contrário: nok (vermelho)
+
+  Estratégias que utilizam:
+
+  - Graham: grau defensivo
+
 =======================================================
 
 Levantamento inicial dos critérios
