@@ -47,6 +47,54 @@ XX) Histórico de dividendos ininterruptos
 
   - Graham: grau defensivo
 
+XX) Crescimento dos lucros
+
+  Kd <= K: excelente (verde)
+  Ka <= K < Kd: bom (amarelo)
+  Caso contrário: nok (vermelho)
+
+  Legenda:
+
+  K = Lf / Li (taxa de variação do lucro)
+  Kd: taxa de variação desejável (ver abaixo)
+  Ka: taxa de variação aceitável (ver abaixo)
+
+  Lf: lucro no final do período
+  Li: lucro no início do período
+
+    se ação apresentou lucros nos últimos 10 anos (critério acima)
+      Lf = média dos lucros dos três últimos anos
+      Li = média dos lucros dos três anos iniciais
+    se ação apresentou lucros nos últimos 5 anos (critério acima)
+      Lf = média dos lucros dos dois últimos anos
+      Li = média dos lucros dos dois anos iniciais
+    caso contrário
+      Lf = Li = -1
+
+  Kd = (1 + id)^n
+  Ka = (1 + ia)^n
+
+  n: período em anos
+    se ação apresentou lucros nos últimos 10 anos (critério acima)
+      n = 10
+    se ação apresentou lucros nos últimos 5 anos (critério acima)
+      n = 5
+    caso contrário
+      n = 0
+
+  id: [CAGR mínimo desejável] / 100
+  ia: [CAGR mínimo aceitável] / 100
+
+  [CAGR mínimo desejável]: taxa desejável de crescimento médio
+  anual do lucro (parâmetro com valor 4%)
+
+  [CAGR mínimo aceitável]: taxa aceitável de crescimento médio
+  anual do lucro (parâmetro com valor 3%)
+
+  Estratégias que utilizam:
+
+  - Graham: grau defensivo
+
 =======================================================
 
 Levantamento inicial dos critérios
@@ -335,7 +383,7 @@ XX) Lucro positivo no último ano
 
 Equivalência entre critérios de crescimento de lucros
 
-Critério 1: crescimento dos lucros a uma taxa i durante is últimos
+Critério 1: crescimento dos lucros a uma taxa i durante os últimos
 A anos.
 
   Tem-se Lf = Li(1+i)^A
