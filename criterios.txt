@@ -95,6 +95,16 @@ XX) Crescimento dos lucros
 
   - Graham: grau defensivo
 
+XX) Alerta de lucros decrescentes recentes
+
+  Lucros decrescentes nos últimos três anos: crítico (vermelho)
+  Lucros decrescentes nos últimos dois anos: alerta (amarelo)
+  Caso contrário: ok (verde)
+
+  Estratégias que utilizam:
+
+  - Graham: grau defensivo
+
 =======================================================
 
 Levantamento inicial dos critérios
