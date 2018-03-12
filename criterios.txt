@@ -95,6 +95,36 @@ XX) Crescimento dos lucros
 
   - Graham: grau defensivo
 
+XX) Alerta de crescimento não sustentável dos lucros
+
+  K <= Ks: ok (verde)
+  Caso contrário: nok (vermelho)
+
+  Legenda:
+
+  K: ver critério "Crescimento dos lucros".
+
+  Ks: taxa de variação sustentável.
+
+  Ks = (1 + is)^n
+
+  n: período em anos
+    se ação apresentou lucros nos últimos 10 anos (critério acima)
+      n = 10
+    se ação apresentou lucros nos últimos 5 anos (critério acima)
+      n = 5
+    caso contrário
+      n = 0
+
+  is: [CAGR máximo sustentável] / 100
+
+  [CAGR máximo sustentável]: taxa sustentável de crescimento médio
+  anual do lucro (parâmetro com valor 10%)
+
+  Estratégias que utilizam:
+
+  - Graham: grau defensivo
+
 XX) Alerta de lucros decrescentes recentes
 
   Lucros decrescentes nos últimos três anos: crítico (vermelho)
